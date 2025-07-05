@@ -10,3 +10,36 @@ capital = {'Alabama': 'Montgomery', 'Alaska': "Juneau", 'Arizona':'Phoenix', 'Ar
 'Rhode Island': 'Providence', 'South Carolina':'Columbia', 'South Dakota':'Pierre', 'Tennessee': 'Nashville',
 'Texas': 'Austin', 'Utah':'Salt Lake City', 'Vermont':'Montpelier', 'Virginia': 'Richmond',
 'Washington':'Olympia', 'West Virginia': 'Charleston', 'Wisconsin': 'Madison', 'Wyoming': 'Cheyenne'}
+
+#Generate 35 quiz files:
+for quizNum in range(35):
+	#Create the quiz and answer key files
+	quizFile = open(f'capitalsquiz{quizNum + 1}.txt', 'w')
+	answerKeyFile = open(f'capitalsquiz_answers{quizNum + 1}.txt', 'w')
+
+#Write out the header for the quiz.
+quizFile.write('Name:\n\nDate:\n\nPeriod:\n\n')
+quizFile.write((' ' * 20)+ f'State Capitals Quiz (Form{quizNum + 1})')
+quizFile.write('\n\n')
+
+#Shuffle the order of the states.
+states = list(capital.keys())
+random.shuffle(states)
+
+#Loop through all the 50 stats, making a question for each.
+for questionNum in range(50):
+		#index the states list by the ith iteration of for loop and then we index the capitals dictionary by the name of the state.
+		correctAnswer = capitals[states[questionNum]]
+		wrongAnswers = list(capitals.values())
+		#lists are mutable , so can use del stmt, overwrites old list
+		del wrongAnswers[wrongAnswers.index(correctAnswer)]
+		wrongAnswers = random.sample(wrongAnswers,3)
+		answerOptions = wrongAnswers + [correctAnswer]
+		random.shuffle(answerOptions)
+
+		#Write the question and answer options to the quiz file.
+
+
+
+
+
