@@ -1,0 +1,3 @@
+# Ignore generated quiz and answer files
+capitalsquiz*.txt
+capitalsquiz_answers*.txt
