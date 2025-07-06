@@ -21,8 +21,8 @@ else:
 
 #Enter the following into editor and save file as mclip.bat
 #saved in C:\Users\user\Scripts
-"""
-I use a Scripts folder in my system PATH (C:\Users\user\Scripts\) to store .bat files that run my Python scripts from any location.
+'''
+I use a Scripts folder in my system PATH (C:\\Users\\user\\Scripts\\) to store .bat files that run my Python scripts from any location.
 The batch file assumes that the Python script is at:
-C:\Users\user\Desktop\automate-the-boring-stuff-with-python\Ch6-strings\mclip.py
-"""
+C:\\Users\\user\\Desktop\\automate-the-boring-stuff-with-python\\Ch6-strings\\mclip.py
+'''
