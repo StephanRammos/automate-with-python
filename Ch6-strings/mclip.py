@@ -20,7 +20,9 @@ else:
 	print('There is no text for ' + keyphrase)
 
 #Enter the following into editor and save file as mclip.bat
-
-
-#my path to file is C:\Users\user\Desktop\automate-the-boring-stuff-with-python\Ch6-strings 
-# i save the mclip.bat in the same ch6 folder. I think i read it has to be saved in a different folder?
+#saved in C:\Users\user\Scripts
+"""
+I use a Scripts folder in my system PATH (C:\Users\user\Scripts\) to store .bat files that run my Python scripts from any location.
+The batch file assumes that the Python script is at:
+C:\Users\user\Desktop\automate-the-boring-stuff-with-python\Ch6-strings\mclip.py
+"""
